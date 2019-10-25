@@ -1,28 +1,32 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+    <!--<HelloWorld msg="Welcome to Your Vue.js App"/> -->
+    <cabecera></cabecera>
+    <AsideComponent></AsideComponent>
+    <contenido/>
+    <FooterComponent/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import cabecera from './components/cabecera.vue'
+import AsideComponent from './components/asides.vue'
+import contenido from './components/contenido.vue'
+import FooterComponent from './components/FooterComponent.vue'
 
 export default {
   name: 'app',
-  components: {  
-    HelloWorld
+  components: {
+    cabecera,
+    AsideComponent,
+    contenido,
+    FooterComponent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
